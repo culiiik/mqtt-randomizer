@@ -1,0 +1,13 @@
+zerops:
+  - setup: mqtt-randomizer
+    build:
+      os: ubuntu
+      base: go@1
+      buildCommands:
+        - go build -o app main.go
+      deployFiles: [.]
+
+    run:
+      os: ubuntu
+      base: go@1
+      start: ./app
