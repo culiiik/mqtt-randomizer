@@ -1,5 +1,5 @@
 zerops:
-  - setup: mqtt-randomizer
+  - setup: mqttrandomizer
     build:
       os: ubuntu
       base: go@1
